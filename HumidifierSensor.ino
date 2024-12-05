@@ -42,7 +42,7 @@ void loop() {
 
     if (readingRaw == -2) waterLevel = FULL_TANK;  // // tank full, water touches both metal probes, capacitance measurement not possible
 
-    else if (readingRaw > TAKEAWAY && readingRaw < MIN_READING) waterLevel = 127;  // turn off fan, available if air dry mode turned off, please check in Mi Home app
+    else if (readingRaw > TAKEAWAY && readingRaw < MIN_READING) waterLevel = FAN_OFF;  // turn off fan, available if air dry mode turned off, please check in Mi Home app
 
     else waterLevel = constrain(map(readingRaw, MIN_READING, MAX_READING, 0, 120), 0, 120);  // map sensor reading
 
