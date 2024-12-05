@@ -6,8 +6,8 @@
 #define SAMPLES_NUMBER 232
 #define TIMEOUT_MS 500
 
-#define MIN_READING 3900   // for 1M resistor and 1000 samples
-#define MAX_READING 13100  // for 1M resistor and 1000 samples
+#define MIN_READING 3900   // for 1M resistor
+#define MAX_READING 13100  // for 1M resistor
 #define PACKET_SIZE 42
 #define CHECKSUM_BASE 0xA0
 #define FULL_TANK 125
