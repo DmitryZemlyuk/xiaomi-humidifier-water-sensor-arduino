@@ -14,7 +14,7 @@ const byte FULL_TANK = 125;
 const byte FAN_OFF = 127;
 const int TAKEAWAY = 2700;
 
-const long INTERVAL = 200;
+const long INTERVAL = 100;
 
 byte packet[PACKET_SIZE + 1] = { 
   0xFA, 0x29, 0x03, 0x00, 0x00, 0x00, 0x00, 0x14, 0x9A, 0x00, 0x00, 0x00, 
